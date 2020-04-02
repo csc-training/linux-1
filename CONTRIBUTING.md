@@ -1,12 +1,41 @@
-# Contributing
+# Contributing to Linux-1
 
-We do value your efforts in making our courses better. But before blindingly just stashing stuff in please follow these guidelines for submitting your contributions:
+We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
-1. Make sure you are up to date with `git pull`
-2. Make a new branch using `git checkout -b <your_branch>` for your intented modifications.
-3. Add or edit the files you wish.
-4. Check your status with `git status` and then use `git add` accordingly.
-5. Stage in your modifications, `git commit`, and please write a proper commit message.
-6. Push your branch in with `git push -u origin <your_branch>`.
-7. Make a pull request in GitHub. We'll check it and likely will merge it in.
-8. Feel happy.
+- Reporting a bug
+- Discussing the current state of the code
+- Submitting a fix
+- Proposing new features
+- Becoming a maintainer
+
+## We develop with Github
+
+We use github to host code, to track issues and feature requests, as well as accept pull requests.
+
+## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
+
+1. Fork the repo (or pull if you've forked already) and create your branch from master.
+
+   Either `git clone` or `git pull`, and `git checkout -b <your_branch>`
+
+2. Add or edit the files you wish and then commit.
+
+   `git status` and `git add`, and then `git commit` with a good commit message.
+
+3. Push your branch and make a pull request.
+
+   `git push -u origin <your_branch>`
+
+4. Feel happy.
+
+## Any contributions you make will be under the MIT Software License
+
+In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
+
+## Report bugs or typos using Github's issues
+
+We use GitHub issues to track public bugs. Report a bug by opening a new issue; it's that easy!
+
+## Use a Consistent Coding Style
+
+This is to be defined still. Sorry.
