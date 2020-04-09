@@ -46,9 +46,10 @@ This course is new territory for us, as this used to be a course that was taught
 
 - We mainly provide shorter videos and supporting slides to explain a certain topic, which should be able to be followed on ones own computer
 - We present short, simple exercises that should be solvable with the input from the video sessions
-- It is no porblem if an exercise remains unsolved, as long as you confront yourself with it.
-- In case of issues, we have a online discussion session the following morning to
-- The daily time spent with the course should not exceed 90 minutes, mounting up to about 10 hours in total (including the preparation steps=
+- It is no problem if an exercise remains unsolved, as long as you confront yourself with the problem and discuss it the next morning
+- In case of issues, we have a online discussion session the following morning to elaborate
+- The daily time spent with the course should not exceed 90 minutes, mounting up to about 10 hours in total (including the preparation steps)
+- Please, provide instant feedback if you feel that something is not working out (we will provide the means for doing so)
 
 
 # Practicalities 
@@ -56,5 +57,5 @@ This course is new territory for us, as this used to be a course that was taught
 - In the online sessions, please keep your video on (if bandwidth permits) and indicate a question by raising your hand
 - If there are strong background noises, please mute your microphone when you do not actively speak
 - If you for some reason cannot attend the online session, please notify us (best beforehand)
-- The timeframe for the online sessions is a suggestion, if we are done earlier, we can do not have to do a full hour
+- The timeframe for the online sessions is a suggestion, if we are done earlier, we do not have to do a full hour
 
