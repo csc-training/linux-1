@@ -12,8 +12,7 @@ lang:	en
 - Follow video to install virtual machine on own computer (10 Minutes + time to install machine)
 - Follow video to test installation of virtual machine (10 Minutes)
 
-
-# Monday:
+# Week 2, Monday:
 - 10:00 – 11:00 Online meeting/Webinar of all participants to introduce the contents and methods of the course<br/>
 - 13:00-15:00 Possibility to trouble-shoot installations of virtual machine (online)
 
