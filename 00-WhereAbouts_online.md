@@ -13,11 +13,11 @@ lang:	en
 - Follow video to test installation of virtual machine (10 Minutes)
 
 
-#Monday:
+# Monday:
 - 10:00 – 11:00 Online meeting/Webinar of all participants to introduce the contents and methods of the course<br/>
 - 13:00-15:00 Possibility to trouble-shoot installations of virtual machine (online)
 
-#Tuesday: 
+# Tuesday: 
 - 10:00 – 10:30 Webinar _1st utilization of Linux - GUI based (opening terminal from GUI, creating shortcuts)_ <br/>
 - Study slides + video _A first glimpse of the shell (simple navigation, listing, creating/removing files and directories)_ (30 Minutes)
 - Do short (10 Minutes) exercises in Moodle
