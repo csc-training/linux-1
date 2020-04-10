@@ -32,7 +32,7 @@ lang:	en
 - 10:00 – 11:00 Online meeting/Webinar Q&A and to discuss exercises
 - study slides + video: _Setup of your system (environment variables, aliases, rc-files)_ (15 Minutes)
 - study slides + video:  _A second look at the shell (finding content, accessing and copying from/to remote hosts)_ (20 Minutes)
-- study slides + video: _Linux security (best practices, user management, firewall, ssh keys)
+- study slides + video: _Linux security (best practices, user management, firewall, ssh keys)_ (15 Minutes)
 - Do short (10 Minutes) exercise in Moodle 
 
 # Friday:
