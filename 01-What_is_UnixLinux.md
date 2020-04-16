@@ -4,6 +4,15 @@ author:	CSC Training
 date:	  2020-04
 lang:	  en
 ---
+# Contents of this session
+
+This session shall give you some insight on:
+
+- the history of UNIX and Linux
+- the distinguishing features between UNIX and Linux
+- the determining features of LINUX (which are common with UNIX)
+- the concept of Command Line and Graphical User Interfaces
+
 # Linux  ≠ UNIX®
 
 - Linux is a free and open-source software operating system built around the Linux kernel.  <img align="right" src="https://isc.tamu.edu/~lewing/linux/sit3-bw-tran.1.gif" alt="Tux" title="By lewing@isc.tamu.edu Larry Ewing and The GIMP">

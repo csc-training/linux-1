@@ -76,7 +76,7 @@ which you can install another OS (in fact, any you want)
 
 # Virtual machines
 
-- The machine can be <img width="66%"  align="right" src="./Fig/VMWarePlayerSuspended.png" alt="Suspended VMWare Player" Title="Suspended VMWare Player virtual machine  (picture T. Zwinger)">
+- The machine can be <img width="600"  align="right" src="./Fig/VMWarePlayerSuspended.png" alt="Suspended VMWare Player" Title="Suspended VMWare Player virtual machine  (picture T. Zwinger)">
 suspended as is
 - Upon relaunch, the user gets
 the system as she/he left it

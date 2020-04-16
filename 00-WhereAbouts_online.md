@@ -5,37 +5,38 @@ date:	2020-04
 lang:	en
 ---
 
-# Preparations to the course, Week 1
+# Preparations to the course, Week 1 (April 27.-30.)
 - Study slides + video _What is UNIX/Linux_ (10 Minutes)
 - Study slides + video _Linux on my own computer_ (15 Minutes)
-- In particular, study the prelimiary conditions to install a virtual machine
+- In particular, study the preliminary conditions to install a virtual machine
 - Follow video to install virtual machine on own computer (10 Minutes + time to install machine)
 - Follow video to test installation of virtual machine (10 Minutes)
 
-# Week 2, Monday:
+# Week 2 (May 4.-8.)
+# Monday, May 4:
 - 10:00 – 11:00 Online meeting/Webinar of all participants to introduce the contents and methods of the course<br/>
 - 13:00-15:00 Possibility to trouble-shoot installations of virtual machine (online)
 
-# Tuesday: 
+# Tuesday, May 5: 
 - 10:00 – 10:30 Webinar _1st utilization of Linux - GUI based (opening terminal from GUI, creating shortcuts)_ <br/>
 - Study slides + video _A first glimpse of the shell (simple navigation, listing, creating/removing files and directories)_ (30 Minutes)
 - Do short (10 Minutes) exercises in Moodle
 
-# Wednesday:
+# Wednesday, May 6:
 - 10:00 – 11:00 Online meeting/Webinar Q&A and to discuss exercises
 - Study slides + video _Text editors (vi, emacs and nano)_ (15 Minutes)
 - Study slides + video _File permissions (concepts of users and groups, changing permissions/groups)_ (15 Minutes)
 - study slides + video: _Job management (scripts and executables, suspending/killing jobs, monitoring)_ (15 Minutes)
 - Do short (10 Minutes) exercise in Moodle 
 
-# Thursday:
+# Thursday, May 7:
 - 10:00 – 11:00 Online meeting/Webinar Q&A and to discuss exercises
 - study slides + video: _Setup of your system (environment variables, aliases, rc-files)_ (15 Minutes)
 - study slides + video:  _A second look at the shell (finding content, accessing and copying from/to remote hosts)_ (20 Minutes)
 - study slides + video: _Linux security (best practices, user management, firewall, ssh keys)_ (15 Minutes)
 - Do short (10 Minutes) exercise in Moodle 
 
-# Friday:
+# Friday, May 8:
 - 10:00 – 11:00 Online meeting/Webinar Q&A and to discuss exercises<br/>
 - 12:00 – 14:00 Interactive session to deal with open questions and specific problems<br/>
 
