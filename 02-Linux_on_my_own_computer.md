@@ -107,7 +107,7 @@ Two main vendors for VM packages:
 	- Only download appliances you trust!
 
 
-#Remote connection
+# Remote connection
 
 - From Max OS X:
 	- ssh and X11 (graphics) built in - like from a Linux machine
