@@ -4,6 +4,14 @@ author:	CSC Training
 date:	  2020-04
 lang:	  en
 ---
+# Contents of this session
+
+This session shall give you some insight on:
+
+- the different option to use Linux on or from your own computer
+- introduce the concepts of dual boot, remote access and virtual machine 
+- give you information on how to connect to UNIX/Linux from Windows
+
 # Running your own Linux system
 
 - Basically, four options:
