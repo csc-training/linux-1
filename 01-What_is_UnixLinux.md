@@ -6,7 +6,7 @@ lang:	  en
 ---
 # Contents of this session
 
-This session shall give you some insight on:![By lewing@isc.tamu.edu Larry Ewing and The GIMP|512x397,20%](//isc.tamu.edu/~lewing/linux/sit3-bw-tran.1.gif)
+This session shall give you some insight on:
 
 - the history of UNIX and Linux 
 - the distinguishing features between UNIX and Linux
