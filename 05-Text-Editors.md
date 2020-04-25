@@ -14,8 +14,9 @@ This session shall introduce you to the basics of the following UNIX/Linux text 
 
 # Why text editors?
 
-- Several times in this course you might have heard the sentence "_everything is text_".  Therefore, being able to create and manipulate text in files is very important
+- Several times in this course you encountered the phrase "_everything is text_".  Consequently, it is important to create and manipulate text in files
 	- We discuss standard (shell) text editors you most likely can expect to be found on Linux computers by default
+	- some applications use these text editors as defaults (e.g. `git` on Ubuntu calls `nano` for writing commit messages)
 - For users being used to editors or text processing programs from Mac or Windows, these editors may not immedeately feel intuitive
 	- Alternatively, there are editors in Linux desktop GUIs that are closer to Windows way of usage, e.g., gedit or Kate
     - for instance, gedit supports **ctrl+c** (copying), **ctrl+x** (cut) and **ctrl+v** (Paste)
@@ -31,8 +32,8 @@ $ nano filename
 ```bash
 $ nano -w /etc/fstab
 ```
-	- If you want to save the changes you've made, press **ctrl+o**
-		- NB: this combination often is denoted using the  carrot symbol **`^`** to denote **ctrl**, i.e., `^O` 
+	- If you want to save the changes you made, press **ctrl+o** (`^O`)
+		- NB: this combination often is denoted using the carrot symbol **`^`** to stand for **ctrl**, i.e., `^O` 
 	- To exit nano, type **ctrl+x** (`^X`).
 		- In case of unsaved modifications, nano will ask you if you want to save it. Answer either  **n** (no)  or **y** (yes) 
 		- In the latter case, nano prompts for a filename - type it in and press **Enter**
@@ -42,7 +43,7 @@ $ nano -w /etc/fstab
 - **Editing** with nano:
 	- cutting single line: **ctrl+k** (`^K`) 
 	- pasting cutted line: **ctrl+u** (`^U`)
-	- placing marker: **ctrl+6** (`^6`), then move cursor forward and hi `^K` tu cut text under highlighted region
+	- placing marker: **ctrl+6** (`^6`), then move cursor forward and hit `^K` to cut text under highlighted region
 - **Searching** with nano:
 	- search is activated with **ctrl+w** (`^W`); then type in string followed by **Enter**
 	- reoccuring instances of same string can be found with **alt+w** (`M-W`) 
