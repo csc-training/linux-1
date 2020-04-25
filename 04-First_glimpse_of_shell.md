@@ -23,7 +23,9 @@ This session shall give you some insight on:
     - bash (default), tcsh (old default), zsh, corn-shell, ...
 
 # What is a shell?
-Lets open the a window of the **desktop GUI** and a **terminal**
+<img align="right" width="70%" src="Fig/Mint_CLI_GUI.png" alt="Linux Mint CLI GUI" title="Home directory of VM in shell and GUI">
+Lets open the a **terminal** and the **desktop GUI**
+
 
 # What is a command?
 
