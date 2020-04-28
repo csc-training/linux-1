@@ -48,4 +48,69 @@ $ nano -w /etc/fstab
 	- search is activated with **ctrl+w** (`^W`); then type in string followed by **Enter**
 	- reoccuring instances of same string can be found with **alt+w** (`M-W`) 
 	  - `M-` stands for meta-key, usally the **alt** key
+
+# GNU Emacs Editor
+
+- Emacs = Editor MACroS for TECO 
+- For opening and creating files, type:
+	```bash
+	$ emacs filename
+	```
+	- Emacs will detect whether you are working on a GUI and opens in a separate window if you are. To disregard the GUI (nw = no window):
+	```bash
+	$ emacs -nw filename
+	```
+- In Emacs, `C-` denotes the **ctrl** key, `M-` the meta (usually **alt**) key.	
+
+# GNU Emacs Editor
+- If you want to **save** the changes,  press **ctrl+x**,**ctrl-s** (`C-x C-s`)
 	
+-  To **open** a file from within Emacs press **ctrl+x**,**ctrl-f** (`C-x C-f`).
+	- A new file will be created if it does not exist yet.
+- To **exit** Emacs, type **ctrl+x**,**ctrl-c** (`C-x C-c`) .
+	- Upon exiting Emacs with a modified file open, it will ask you if you want to save it. Answer with `y` if you want, else with `n`
+- You can abort any command by hitting `C-g`.
+
+# GNU Emacs Editor - windows
+
+
+- If you have multiple files (=buffers) open in Emacs you can switch between
+them with `C-x ←` and `C-x →`, or list all the buffers with `C-x C-b`.
+	- To actually use the buffer list you need to switch to that window with `C-x o`.
+	- Type `C-x 1` to close other windows, and `C-x 0` to close the current window.
+	
+#  GNU Emacs Editor - cursor movement
+
+- Emacs' cursor movement commands can also be used in the regular shell
+- Use `C-a` and `C-e` to jump to the beginning/end of current line.
+- `M-b` takes you backwards a word at a time, and `M-f` moves forward.
+- Hit `M-`**backspace** or `M-d` to delete the word left/right to the cursor.
+- To kill the rest of the line from the cursor, hit `C-k`.
+- Undoing recent edits: `C-/` aka Undo helps.
+	- same fucntionality by  `C-_` and `C-x u`.
+
+#  GNU Emacs Editor - basic approach
+	
+- things get less complicated, <img width="50%" align="right" src="Fig/emacs_GUI.png" alt="Emacs" title="Emacs GUI"> if you run Emacs in a graphical user interface, as then you find usual functionality in menus and symbols (see picture containing the input file for this slide)
+
+# The vi Editor
+
+- vi is a **modal editor**
+	- Warning: if you are used to text processing in Windows or Mac, this can be highly counter-intuitive concept
+	- vi, though, is part of any Linux/UNIX system, so always there
+- open a file:
+	```bash
+	$ vi filename
+	```
+- it always opens in **command mode**, so it only understands commands.
+	- In this mode, you can do anything else but insert or edit the text.
+- You switch to **insert mode** with commands like insert, open, or append, and
+back to command mode with **esc**.
+
+# The vi Editor
+
+- To **save** the changes, type **esc : w enter**.
+- To **exit** vi, type **esc : q**
+- vi will not allow you to exit from a modified file. If you really want to discard
+your changes, you need to type **esc : q !**
+- To save and exit on one go type **esc : w q**
