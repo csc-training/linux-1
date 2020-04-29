@@ -73,23 +73,6 @@ Print contents of a directory or information on a file
   ```
   - **`?`** is a wildcard for any *single* alpha-numeric character
 
-# Contents of a file
-
-- Printing contents of (text) file to screen:
-
-	```bash
-	$ cat /etc/group
-	```
-	- **`-n`** to precede lines with line numbers
-	- What if the file does not fit on the screen?
- - Open a scroll-/pageable view of a file:
-   ```bash
-   $ less /etc/group
-   ```
-   - Press **`q`** to quit
-   - **`/`** to search forward, **`?`** for backwards
-   - **`n`** to find the next match, **`N`** for previous
-
 # Moving around in directories
 
 - change directory:
@@ -224,7 +207,24 @@ $ cd /etc/init.d
   -> ls: cannot access 'mydir3': No such file or directory
   ```
   - **Exercise**: Explain why, despite the error message, `mydir3` is gone.
-	
+  
+# Contents of a file
+
+- Printing contents of (text) file to screen:
+
+	```bash
+	$ cat /etc/group
+	```
+	- **`-n`** to precede lines with line numbers
+	- What if the file does not fit on the screen?
+ - Open a scroll-/pageable view of a file:
+   ```bash
+   $ less /etc/group
+   ```
+   - Press **`q`** to quit
+   - **`/`** to search forward, **`?`** for backwards
+   - **`n`** to find the next match, **`N`** for previous
+   
 # Creating files, redirecting output
 
 - In UNIX/Linux: **everything is text**
@@ -312,7 +312,7 @@ $ cd /etc/init.d
 - **Exercises**:
 	- Create another empty file `myfile4.txt`
 	- Make a listing (`ls`) to verify that it exists
-	- Come up with a single command that moves `myfile4.txt` and renames it at the same time into `myfile5.txt` 
+	- Come up with a single command that moves `myfile4.txt` into the directory `mydir5` and renames it at the same time into `myfile5.txt` 
 	- As result, show the listing of `mydir5`
 
 
