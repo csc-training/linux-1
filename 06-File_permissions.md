@@ -1,5 +1,5 @@
 ---
-title:  File Permissions
+title:  File permissions
 author: CSC Training
 date:     2020-04
 lang:     en
