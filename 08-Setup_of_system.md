@@ -101,35 +101,35 @@ multiple lines.
 # Setting shell and environmental variables
 
 -  In order to change a **shell variable into an environmental variable**, we have to `export` it:
-	```bash
-	$ export TEST_VAR
-	```
-	- We can check this by checking our environmental listing again:
-	```bash
-	$ printenv | grep TEST_VAR
-	```
+   ```bash
+   $ export TEST_VAR
+   ```
+   - We can check this by checking our environmental listing again:
+   ```bash
+   $ printenv | grep TEST_VAR
+   ```
 - Declaration of environmental variables in a single line:
-	```bash
-	$ export NEW_VAR="Testing export"
-	```
+  ```bash
+  $ export NEW_VAR="Testing export"
+  ```
 - Accessing the value of any variable with  preceding **`$`**:
-	```bash
-	$ echo $TEST_VAR
-	$ ls $HOME
-	```
+  ```bash
+  $ echo $TEST_VAR
+  $ ls $HOME
+  ```
 	
 # Demoting and un-setting variables
 
 - Demoting an environmental variable back into a shell variable using `-n` option:
-	```bash
-	$ export -n TEST_VAR
-	```
-	- **Exercise**: From the previous slides, find the right command for testing environmental variable followed by `| grep TEST_VAR` - what do you expect to see on the screen?
-	- **Exercise**: Do the same as above with the command denoting all shell variables - is `TEST_VAR` still a shell variable?
+  ```bash
+  $ export -n TEST_VAR
+  ```
+  - **Exercise**: From the previous slides, find the right command for testing environmental variable followed by `| grep TEST_VAR` - what do you expect to see on the screen?
+  - **Exercise**: Do the same as above with the command denoting all shell variables - is `TEST_VAR` still a shell variable?
 - To completely unset a variable (either shell or environmental):
-	```bash
-	$ unset TEST_VAR
-	```
+  ```bash
+  $ unset TEST_VAR
+  ```
   
 # Setting variables at login
 
@@ -196,17 +196,17 @@ environment.
 # Shell initialization files
 
 - Recalling the functionality of `PATH` to contain a list (seperated by `:`) of all directories in the system where to search for executable files
-	```bash
-	$ echo $PATH
-	-> /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-	```
-	- Usually, distributions install software in one of these directories
+  ```bash
+  $ echo $PATH
+  -> /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  ```
+  - Usually, distributions install software in one of these directories
 - Lets assume we have a directory `/opt/someprogram/bin` containing the executable of an externally installed program and want to add it to `PATH`
-	```bash
-	$ export PATH="$PATH:/opt/someprogram/bin"
-	$ echo $PATH
-	-> /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/someprogram/bin
-	```
+  ```bash
+  $ export PATH="$PATH:/opt/someprogram/bin"
+  $ echo $PATH
+  -> /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/someprogram/bin
+  ```
 
 # Aliases
 
@@ -221,32 +221,30 @@ available to interactive subshells.
 
 - The general syntax for the alias command varies somewhat according to the type of shell. 
 - In the case of `bash` shell it is
-	```bash
-	$ alias [name="value"]
-	```
-	- `name` is the name of the new alias
-	- `value` is the command which the alias will initiate.
-	- the alias name and the replacement text can contain any valid shell input
-except for `=` (the equals sign).
-	- if run without any argument, `alias` displays current set aliases	
+  ```bash
+  $ alias [name="value"]
+  ```
+  - `name` is the name of the new alias
+  - `value` is the command which the alias will initiate.
+  - the alias name and the replacement text can contain any valid shell input except for `=` (the equals sign).
+  - if run without any argument, `alias` displays current set aliases	
 
 # Aliases
 
-- An example of alias creation could be the alias p for the commonly
-used pwd command:
-	```bash
-	$ alias p="pwd"
-	```
+- An example of alias creation could be the alias p for the commonly used pwd command:
+  ```bash
+  $ alias p="pwd"
+  ```
 -  An alias can be created with the same name as the corresponding command:
-	```bash
-	$ alias ls="ls --color=auto"
-	```
-	- From the shell, `ls` calls this alias
-	- Disable it temporarily by preceding it with a backslash:
-	```bash
-	$ \ls
-	```
-	- An alias does not replace itself, avoiding infinite recursion.
+   ```bash
+   $ alias ls="ls --color=auto"
+   ```
+   - From the shell, `ls` calls this alias
+   - Disable it temporarily by preceding it with a backslash:
+   ```bash
+   $ \ls
+   ```
+   - An alias does not replace itself, avoiding infinite recursion.
 	
 # Aliases
 
@@ -255,16 +253,16 @@ used pwd command:
 # Aliases
 
 - You can nest aliases:
-	```bash
-	$ alias l="ls -1"
-	$ alias lc="l | wc -l"
-	```
-	- Now you can even change the alias for 'l' and have the changed behaviour in alias 'lc', too.
+  ```bash
+  $ alias l="ls -1"
+  $ alias lc="l | wc -l"
+  ```
+  - Now you can even change the alias for 'l' and have the changed behaviour in alias 'lc', too.
 - Use the unalias built-in to remove an alias:
-	```bash
-	$ unalias l lc
-	```
-- MIND: Aliases are disabled for non-interactive shells (that is, shell
+  ```bash
+  $ unalias l lc
+  ```
+  - MIND: Aliases are disabled for non-interactive shells (that is, shell
 scripts); you have to use the actual commands instead.
 
 
