@@ -19,7 +19,7 @@ lang:	en
 
 # Tuesday, May 5: 
 - 10:00 – 10:30 Webinar _1st utilization of Linux - GUI based (opening terminal from GUI, creating shortcuts)_ <br/>
-- Study slides + video _A first glimpse of the shell (simple navigation, listing, creating/removing files and directories)_ (30 Minutes)
+- Study slides + video _A first glimpse of the shell (simple navigation, listing, creating/removing files and directories)_ (~ 60 Minutes)
 - Do short (10 Minutes) exercises in Moodle
 
 # Wednesday, May 6:
