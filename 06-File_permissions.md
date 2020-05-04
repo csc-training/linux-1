@@ -48,14 +48,14 @@ UNIX/Linux (POSIX) file systems are structured into users and groups with corres
   ```bash
   $ cp /etc/group testfile
   $ ls -l testfile
-  -> -rw-r--r-- 1 cscuser cscuser 1024 Apr 28 23:14 testfile
+  -> -rw-r--r-- 1 cscuser cscuser 1005 Apr 28 23:14 testfile
   ```
   - read + writeable for user, readable for group and everyone else
 - Command to change permissions:
   ```bash
   $ chmod u+x,g+rw,o-r testfile
   $ ls -l testfile
-  -> -rwxrw---- 1 cscuser cscuser 1024 Apr 28 23:14 testfile
+  -> -rwxrw---- 1 cscuser cscuser 1005 Apr 28 23:14 testfile
   ```
   - `u` for users, `g` for groups, `o` for others; `-` deprives, `+` adds attribute
   - result: read, write and executable for user, read and writeable for group, no rights for others
@@ -77,21 +77,31 @@ UNIX/Linux (POSIX) file systems are structured into users and groups with corres
 
 - Changing file ownership to other user (might need privileged user rights to do so):
   ```bash
-  $ chmod root testfile
+  $ chown root testfile
   ```
 - Changing file group (only possible for groups one is part of):
   ```bash
-  $ chgrp lp testfile
+  $ chgrp sambashare testfile
   $ ls -l testfile
-  -> -rwxrw---- 1 cscuser lp 1024 Apr 28 23:14 testfile
+  -> -rwxrw---- 1 cscuser sambashare 1005 Apr 28 23:14 testfile
   ```
 - Recursively changing attributes: both commands can act on whole directory trees, if argument is a directory and the option `-R` is added	
 
-# Our first executable script
+# Executable scripts
 
-- Scripts are something similar like bash-macros, i.e., a series of commands that one can repeat by calling the script
+- Scripts are something one could call "bash-macros", i.e., a series of commands that one can repeat by calling the script
 	- Rule for happy computing: "As soon as you do a series of commands twice in the shell, it already pays off to make a script out of it"
-- Using the text editor of your choice, open a new file called `befriendly.sh` with the following contents
+- Sometimes "programs" are actually only wrapper scripts. E.g., check out
+  ```bash
+  $ less /usr/bin/sensible-browser
+  ```
+  - and now just execute it
+  ```bash
+  $ sensible-browser
+  ```
+	
+# Our first executable script	
+- **Exercise**: Using the text editor of your choice, open a new file called `befriendly.sh` with the following contents
   ```bash
   #!/bin/bash
   echo "Hello and welcome"
@@ -99,9 +109,7 @@ UNIX/Linux (POSIX) file systems are structured into users and groups with corres
   date
   echo "Have a nice rest of the day"
   ```
-	
-# Our first executable script	
-- **Exercise**: change the file for you as a user to be executable and then execute with
+- change the file for you as a user to be executable and then execute with
   ```bash
   $ ./befriendly.sh
   ```
