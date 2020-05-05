@@ -40,9 +40,8 @@ variables.
 - We can see a list of all of our environmental variables by using the
 `printenv` command.
 - The `set` command can be used for listing the shell variables.
-	- If we type set without any additional parameters, we will get a list of all shell variables, environmental variables, local variables, and shell functions.
-	- The amount of information provided by `set` is overwhelming and there is no
-way limiting the output to shell variables only.
+	- If we type `set` without any additional parameters, we will get a list of all shell variables, environmental variables, local variables, and shell functions.
+	- The amount of information provided by `set` is overwhelming and there is no easy way limiting the output to shell variables only.
 	- You can still try with
 	```bash
 	$ comm -23 <(set -o posix; set | sort) <(printenv | sort)
@@ -86,17 +85,17 @@ multiple lines.
 # Setting shell and environmental variables
 
 - Defining a shell variable is easy to accomplish; we only need to specify a name and a value:
-	```bash
-	$ TEST_VAR='Hello World!'
-	```
-	- We now have declared a shell variable, which is available in our current session, only. It will not be passed down to child processes. We can see this by grepping for our new variable within the `set` output:
-	```bash
-	$ set | grep TEST_VAR
-	```
-	- We can verify that this is not an environmental variable by trying the same thing with `printenv`:
-	```bash
-	$ printenv | grep TEST_VAR
-	```
+  ```bash
+  $ TEST_VAR='Hello World!'
+  ```
+  - We now have declared a shell variable, which is available in our current session, only. It will not be passed down to child processes. We can see this by grepping for our new variable within the `set` output:
+  ```bash
+  $ set | grep TEST_VAR
+  ```
+  - We can verify that this is not an environmental variable by trying the same thing with `printenv`:
+  ```bash
+  $ printenv | grep TEST_VAR
+  ```
 	
 # Setting shell and environmental variables
 
@@ -120,12 +119,12 @@ multiple lines.
 	
 # Demoting and un-setting variables
 
-- Demoting an environmental variable back into a shell variable using `-n` option:
+- Demoting an environmental variable back into a shell variable using:
   ```bash
   $ export -n TEST_VAR
   ```
-  - **Exercise**: From the previous slides, find the right command for testing environmental variable followed by `| grep TEST_VAR` - what do you expect to see on the screen?
-  - **Exercise**: Do the same as above with the command denoting all shell variables - is `TEST_VAR` still a shell variable?
+  - **Exercise**: From the previous slides, find the right command for testing environmental variable followed by `| grep TEST_VAR` (this syntax will be explained later) - what do you expect to see on the screen?
+  - **Exercise**: Do the same as above with the command that lists all shell variables - is `TEST_VAR` still a shell variable?
 - To completely unset a variable (either shell or environmental):
   ```bash
   $ unset TEST_VAR
@@ -191,11 +190,11 @@ environment.
 
 - **Exercise**: make a listing of all bash-related initialization files on your system.
 	- you have to find out how to list so-called *hidden* files (i.e., entries starting with)
-	- `man` command is your frind here
+	- `man` command is your friend here
 
 # Shell initialization files
 
-- Recalling the functionality of `PATH` to contain a list (seperated by `:`) of all directories in the system where to search for executable files
+- Recalling the functionality of `PATH` to contain a list (separated by `:`) of all directories in the system where to search for executable files
   ```bash
   $ echo $PATH
   -> /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -222,7 +221,7 @@ available to interactive subshells.
 - The general syntax for the alias command varies somewhat according to the type of shell. 
 - In the case of `bash` shell it is
   ```bash
-  $ alias [name="value"]
+  $ alias [name='value']
   ```
   - `name` is the name of the new alias
   - `value` is the command which the alias will initiate.
@@ -231,7 +230,7 @@ available to interactive subshells.
 
 # Aliases
 
-- An example of alias creation could be the alias p for the commonly used pwd command:
+- An example of alias creation could be the alias `p` for the commonly used `pwd` command:
   ```bash
   $ alias p="pwd"
   ```
@@ -248,7 +247,7 @@ available to interactive subshells.
 	
 # Aliases
 
-- **Exercise**: You remember from the first session that the `-i` option of the remove command `rm` adds a level of security to to it. Create an alias in the shell of your appliance that redefines `rm` to include its own `-i` option. Write the necessary command into Moodle
+- **Exercise**: You remember from the first session that the `-i` option of the remove command `rm` adds a level of security to to it. Create an alias in the shell of your appliance that redefines `rm` to include its own `-i` option. 
 
 # Aliases
 
@@ -257,7 +256,7 @@ available to interactive subshells.
   $ alias l="ls -1"
   $ alias lc="l | wc -l"
   ```
-  - Now you can even change the alias for 'l' and have the changed behaviour in alias 'lc', too.
+  - Now you can even change the alias for `l` and have the changed behaviour in alias `lc`, too.
 - Use the unalias built-in to remove an alias:
   ```bash
   $ unalias l lc
