@@ -111,7 +111,7 @@ input from other program or keyboard; not used here  | first word = command | ar
   - option `-h` for *human readable* output
   ```
   Filesystem      Size  Used Avail Use% Mounted on
-  udev            461M     0  462m   0% /dev
+  udev            461M     0  462M   0% /dev
   tmpfs            99M  1,1M   98M   2% /run
   /dev/sda5        11G  7.4G  2.3G  73% /
   tmpfs           493M     0  493M   0% /dev/shm
@@ -170,7 +170,7 @@ input from other program or keyboard; not used here  | first word = command | ar
   - **Exercise**: Explain, where on `puhti` will you find the file?
 - copying from remote machine
   ```bash
-  $ scp user@puhti.csc.fi:'~/hello*.tgz' . 
+  $ scp user@puhti.csc.fi:'~/hello*.tar.gz' . 
   ```
   
 # Compressing files and directories 
@@ -215,7 +215,7 @@ input from other program or keyboard; not used here  | first word = command | ar
 - There is a ZIP-compatible command on Linux/UNIX
 - To **create** `hello.ZIP` recursively (`-r`) from the subdirectory `hello-2.7`
   ```bash
-  $ zip -hello.ZIP hello-2.7/
+  $ zip -r hello.ZIP hello-2.7/
   ```
 - To **extract**
   ```bash
