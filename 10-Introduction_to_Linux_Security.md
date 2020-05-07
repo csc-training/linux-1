@@ -115,7 +115,28 @@ computer a 3rd party client, e.g. PuTTY, is needed.
 - Keys eliminate the need for passwords.
   - You win twice: higher convenience and increased security!
 
-# 
+# SSH keys
+
+- First you need to create a key pair (unless you already have one), which are used to encrypt and decrypt data: <img width="50%" align="right" src="Fig/491px-Public_key_encryption.svg.png" alt="key-encryption" title="By Davidgothberg - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1028460">
+  ```bash
+  $ ssh-keygen -t rsa -b 4096
+  ```
+  - This creates two files: `.ssh/id_rsa` and `.ssh/id_rsa.pub` in your home directory.
+  - The `id_rsa` is your **private key**. **Do not disclose this one!**
+  - The `id_rsa.pub` is your **public key**. You may think of it as a lock, which opens only with your private key. You may place it anywhere you want; it's public.
+  - You may have as many key pairs as you wish but typically only one
+is enough.
+
+# Using SSH
+
+- The public key needs to be copied over to a specific file, `~/.ssh/authorized_keys`, on the remote host (server) you intend to log in with ssh.
+  ```bash
+  $ scp ~/.ssh/id_rsa.pub user@host:
+  $ ssh user@host
+  host $ cat id_rsa.pub >> .ssh/authorized_keys
+  ```
+- The next time you log in to the remote host ssh will be using your keys instead of your password on that host.
+  - NB: If you assigned a passphrase for your keys (highly recommended!) `ssh` will ask for that passphrase. In that case use ssh-agent.
    
    
 
