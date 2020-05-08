@@ -39,9 +39,9 @@ lang:     en
 - The single most common risk for you: **loss of data**.
 - It's just a matter of a small typo in a command:
   ```bash
-  $ rm -rf ./ *
+  $ rm -rf . /*
   ```
-  - DON´T EXECUTE THE LINE ABOVE: This will delete every file and directory on the system without asking anything.
+  - DON´T EXECUTE THE LINE ABOVE: This will delete every file and directory on the system without asking anything (if you have permissions).
 - Make backups – and keep them up-to-date!
 
 # System administration
@@ -117,15 +117,14 @@ computer a 3rd party client, e.g. PuTTY, is needed.
 
 # SSH keys
 
-- First you need to create a key pair (unless you already have one), which are used to encrypt and decrypt data: <img width="50%" align="right" src="Fig/491px-Public_key_encryption.svg.png" alt="key-encryption" title="By Davidgothberg - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1028460">
+- First you need to create a key pair (unless you already have one), which are used to encrypt and decrypt data: <img width="33%" align="right" src="Fig/491px-Public_key_encryption.svg.png" alt="key-encryption" title="By Davidgothberg - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1028460">
   ```bash
   $ ssh-keygen -t rsa -b 4096
   ```
   - This creates two files: `.ssh/id_rsa` and `.ssh/id_rsa.pub` in your home directory.
   - The `id_rsa` is your **private key**. **Do not disclose this one!**
   - The `id_rsa.pub` is your **public key**. You may think of it as a lock, which opens only with your private key. You may place it anywhere you want; it's public.
-  - You may have as many key pairs as you wish but typically only one
-is enough.
+  - You may have as many key pairs as you wish.
 
 # Using SSH
 
