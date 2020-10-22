@@ -188,7 +188,7 @@ $ cd /etc/init.d
   $ cd ..
   $ rmdir mydir1
   $ ls
-  -> mydir2
+  -> mydir3
   ```
 - Try to remove whole branch of empty directory tree 
   ```bash
