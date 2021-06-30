@@ -97,13 +97,13 @@ that job.
 ```bash
   $ sudo mount -t ecryptfs Private Private
 ```
-    - Enter a good passphrase and memorize it. There is no way getting your data back should you forget your passphrase.
-    - Without further ado just accept the default settings.
-    -  Anything you save in the directory Private will now be encrypted.
-    - Unmount
-    ```bash
-    $ sudo umount Private
-    ```
+   - Enter a good passphrase and memorize it. There is no way getting your data back should you forget your passphrase.
+   - Without further ado just accept the default settings.
+   -  Anything you save in the directory Private will now be encrypted.
+   - Unmount
+   ```bash
+   $ sudo umount Private
+   ```
 
 # SSH – The Secure Shell
 
@@ -121,10 +121,10 @@ computer a 3rd party client, e.g. PuTTY, is needed.
 ```bash
   $ ssh-keygen -t rsa -b 4096
 ```
-    - This creates two files: `.ssh/id_rsa` and `.ssh/id_rsa.pub` in your home directory.
-    - The `id_rsa` is your **private key**. **Do not disclose this one!**
-    - The `id_rsa.pub` is your **public key**. You may think of it as a lock, which opens only with your private key. You may place it anywhere you want; it's public.
-    - You may have as many key pairs as you wish.
+   - This creates two files: `.ssh/id_rsa` and `.ssh/id_rsa.pub` in your home directory.
+   - The `id_rsa` is your **private key**. **Do not disclose this one!**
+   - The `id_rsa.pub` is your **public key**. You may think of it as a lock, which opens only with your private key. You may place it anywhere you want; it's public.
+   - You may have as many key pairs as you wish. Use option `-f keyname` to choose keypair name
 
 # Using SSH (the hard way)
 
@@ -134,18 +134,18 @@ computer a 3rd party client, e.g. PuTTY, is needed.
   $ ssh csctrngNN@vmXXXX.kaj.pouta.csc.fi
   host $ cat id_rsa.pub >> .ssh/authorized_keys
 ```
-    - There is an **elegant single-step command** combining all this (**next slide**)
-    - The next time you log in to the remote host ssh will be using your keys instead of your password on that host.
-    - NB: If you assigned a passphrase for your keys (highly recommended!) `ssh` will ask for that passphrase. In that case use ssh-agent.
+   - There is an **elegant single-step command** combining all this (**next slide**)
+   - The next time you log in to the remote host ssh will be using your keys instead of your password on that host.
+   - NB: If you assigned a passphrase for your keys (highly recommended!) `ssh` will epeatedly ask for that passphrase. To avoid this, use `ssh-agent`.
   
 # Using SSH (the elegant way)
 - Instead of manually copying the private key and including it into `.ssh/authorized_keys` on the remote computer, we can use a command provided for exactly doing that
 ```bash
   $ ssh-copy-id -i .ssh/id_rsa csctrngNN@vmXXXX.kaj.pouta.csc.fi
 ```
-     - Give the name of the keypair without the `.pub` suffix; the command itself will take care that only the private key is transferred
-     - You will be prompted the password of the remote computer (for the last time) to execute that comman
-     - Thereafter, you should be able to use the key to log in
+   - Give the name of the keypair without the `.pub` suffix; the command itself will take care that only the private key is transferred
+   - You will be prompted the password of the remote computer (for the last time) to execute that comman
+   - Thereafter, you should be able to use the key to log in
 
    
    
