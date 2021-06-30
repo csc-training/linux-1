@@ -21,7 +21,8 @@ This session shall give you some insight on:
 	2. Run it inside a **Virtual Machine**
 	- the method of choice in this course (see later)
 	3. Run in a **container**
-	- containers are something like like-weight virtual machines (e.g. Docker)
+	- containers are environments that still use the host-system's kernel (e.g. Docker, Singularity)
+	- containers bring along all needed libraries 
 	4. Run it **remotely** over the network
 	- Includes remote login and remote desktops
 	- Naturally, needs a network connection
@@ -67,7 +68,7 @@ is [Darwin](https://developer.apple.com/library/archive/documentation/MacOSX/Con
 - Containers are explained in more details on [this page provided by Docker](https://www.docker.com/resources/what-container)
 - Docker runs on any common operating system (Windows, MacOS, Linux)
 - Basically only without graphics
-	- It is for instance possible to run a remote desktop inside *Docker* and connect to it, but it often is not fun
+	- It is for instance possible to run a remote desktop inside *Docker* and connect to it, but its setup is not fun
 
 # Virtual machines
 
