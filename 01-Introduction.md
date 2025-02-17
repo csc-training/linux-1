@@ -12,25 +12,27 @@ The terminology around Linux can be a bit confusing. You may have come across Li
 
 > The Linux kernel is the core component of the Linux operating system, responsible for managing hardware resources and enabling communication between hardware and software. It handles tasks like process management, memory management, and device control, serving as the foundation for all Linux-based systems.[^1]
 
-Linus Torvalds wrote the first version of the Linux kernel. The name 'linux' came from the directory used on the server to distribute the source code.[^2]
+Linus Torvalds wrote the first version of the Linux kernel. The name `Linux` came from the directory used on the server to distribute the source code.[^2]
 
-Incidentally, CSC hosts the server https://nic.funet.fi [^3] that made the first kernel available to the world.
+Incidentally, CSC hosts the server[^3] [nic.funet.fi](https://nic.funet.fi) that made the first kernel available to the world.
 
-Later versions of the kernel can be found at [https://www.kernel.org/](https://www.kernel.org/).
+Later versions of the kernel can be found at [https://www.kernel.org](https://www.kernel.org).
 
 ## Exercises
 
-1. Visit the original source of the Linux kernel at https://nic.funet.fi/pub/OS/Linux.
+1. Visit the original source of the Linux kernel at [nic.funet.fi/pub/OS/Linux](https://nic.funet.fi/pub/OS/Linux).
 2. Check out your Linux's installed kernel version from command line with command `uname -r`
 3. Go to https://www.kernel.org and compare the version number of your Linux kernel with the versions listed on the website. Think of reasons why your kernel version might be different from the latest kernel version.
 4. :cactus: See the kernel documentation at https://docs.kernel.org/index.html. :cactus:
 
 # Operating System
 
-> The Linux operating system consists of the kernel and software that complements the kernel. The first such software came from Richard Stallman's GNU project[^4]. Other complementary software sources have emerged since then.
+> The Linux operating system consists of the kernel and software that complements the kernel. The first such software came from Richard Stallman's GNU project.[^4]
+
+Other complementary software sources have emerged since then.
 
 > [!NOTE]
-> For this reason, you may sometimes see the Linux operating system referred to as `GNU/Linux`.
+> But for this historic reason, you may sometimes see the Linux operating system referred to as `GNU/Linux`.
 
 ## Exercises
 
@@ -63,8 +65,8 @@ There are around nine hundred different Linux distributions, of which about 250 
 
 ## Exercises
 
-1. Some communities are well organised. Visit the [Debian Community page](https://www.debian.org/intro/index#community)
-2. Some communities are 'just' discussion forums. Visit the [Gentoo discussion forums](https://forums.gentoo.org/)
+1. Some communities are well organised. Visit the [Debian Community page](https://www.debian.org/intro/index#community).
+2. Some communities are 'just' discussion forums. Visit the [Gentoo discussion forums](https://forums.gentoo.org/).
 3. Some communities are built around the commercial nature of distribution. Visit the [Red Hat Community](https://access.redhat.com/community/) pages.
 4. :cactus: Some communities need to have rules to function properly. Visit the [documentation pages for the Linux kernel development community](https://www.kernel.org/doc/html/v4.14/process/index.html). :cactus:
 
@@ -73,20 +75,22 @@ There are around nine hundred different Linux distributions, of which about 250 
 
 # Evolution of Linux
 
-> Peter H. Salus sums up the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
-> The GNU operating system is a complete free software system that is upwardly compatible with Unix. GNU stands for "GNU's Not Unix".
-> The Linux kernel is a Unix-like operating system kernel.
+> Peter H. Salus sums up the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.[^7]
+> The GNU operating system is a complete free software system that is upwardly compatible with Unix. GNU stands for "GNU's Not Unix".[^8]
+> The Linux kernel is a Unix-like operating system kernel.[^9]
 
 ## Exercises
 
 1. Read the Wikipedia article on [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy).
 2. Read about the [GNU project by Richard Stallman](https://www.gnu.org/gnu/thegnuproject.html).
 3. Read the Wikipedia article on [Unix-like](https://en.wikipedia.org/wiki/Unix-like).
+4. :cactus: Read a history of one of the Linux distributions: [S.u.S.E.](https://www.abortretry.fail/p/the-history-of-suse). :cactus:
 
 # What Linux is not?
 
 <img src="Fig/pop_os.png" alt="Pop!_Os desktop" width="800"/>
-_Pop!\_OS COSMIC desktop environment_
+
+*Pop!_OS COSMIC desktop environment.*
 
 Modern Linux distributions can be very pleasing to the eye, easy and efficient to use, free and privacy-preserving.
 
@@ -100,3 +104,6 @@ Modern Linux distributions can be very pleasing to the eye, easy and efficient t
 [^4]: [Overview of the GNU System](https://www.gnu.org/gnu/gnu-history.en.html)
 [^5]: [Wikipedia - Linux Distribution Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 [^6]: [distrowatch.com search](https://distrowatch.com/search.php)
+[^7]: [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
+[^8]: [GNU project by Richard Stallman](https://www.gnu.org/gnu/thegnuproject.html)
+[^9]: [Unix-like](https://en.wikipedia.org/wiki/Unix-like)
