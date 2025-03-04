@@ -38,7 +38,8 @@ Other complementary software sources have emerged since then.
 
 1. Check out the GNU software available at the time it was combined (not an exact date) with the Linux kernel: [GNU's Bulletin, vol. 1 no. 11, June, 1991](https://www.gnu.org/bulletins/bull11.html#SEC16)
 2. Read what Linus wrote about the release of Linux 0.01 [pdf](https://github.com/oldlinux-web/oldlinux-files/blob/master/Linux-0.01/docs/Linux.pdf). What was the name of the GNU kernel?
-3. :cactus: Download, extract and check out the 0.01 version of the [Linux kernel source code](https://github.com/oldlinux-web/oldlinux-files/tree/master/Linux-0.01/sources/system/kernel). What timestamps did the source code files have? :cactus:
+3. Read how Lars Wirzenius remembers [the early days of Linux](https://lwn.net/Articles/928581). Who is Lars?
+4. :cactus: Download, extract and check out the 0.01 version of the [Linux kernel source code](https://github.com/oldlinux-web/oldlinux-files/tree/master/Linux-0.01/sources/system/kernel). What timestamps did the source code files have? :cactus:
 
 # (Commercial) Distribution
 
