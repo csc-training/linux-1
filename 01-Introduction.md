@@ -54,7 +54,7 @@ There are around nine hundred different Linux distributions, of which about 250 
 1. The following link will take you to the website of a random Linux distribution: https://distrowatch.com/random.php. Have a look at five random Linux distributions.
 2. Check a few more random distributions. This time pay attention to the `Based on` tag in the distribution info box.
 3. Now look again at the timeline of Linux distributions[^5]. Follow the different distributions back to their parent distributions. How many are there? Look at the home page or info page of the parent distribution on distrowatch.com.
-4. :cactus: Install and use an upstream distribution or derivative of Debian (perhaps Ubuntu or Mint) and Red Hat (e.g. Fedora). :cactus:
+4. :cactus: Install and use an upstream distribution or derivative of [Debian](https://www.debian.org/) (perhaps [Ubuntu](https://ubuntu.com/) or [Mint](https://linuxmint.com/)) and [Red Hat](https://www.redhat.com/en) (e.g. [Fedora](https://fedoraproject.org/)). :cactus:
 
 > [!TIP]
 > For the fourth optional exercise, you can use the distrowatch.com [search](https://distrowatch.com/search.php) page and its **'Based on'** query parameter.
@@ -65,13 +65,13 @@ There are around nine hundred different Linux distributions, of which about 250 
 
 ## Exercises
 
-1. Some communities are well organised. Visit the [Debian Community page](https://www.debian.org/intro/index#community).
-2. Some communities are 'just' discussion forums. Visit the [Gentoo discussion forums](https://forums.gentoo.org/).
-3. Some communities are built around the commercial nature of distribution. Visit the [Red Hat Community](https://access.redhat.com/community/) pages.
-4. :cactus: Some communities need to have rules to function properly. Visit the [documentation pages for the Linux kernel development community](https://www.kernel.org/doc/html/v4.14/process/index.html). :cactus:
+1. Communities can be structured in many ways. Visit the [Debian Community page](https://www.debian.org/intro/index#community).
+2. Communities can take the form of discussion forums. Visit the [Gentoo discussion forums](https://forums.gentoo.org/).
+3. Communities can be built around the commercial nature of distribution. Visit the [Red Hat Community](https://access.redhat.com/community/) pages.
+4. :cactus: Communities may need definitive rules to function properly. Visit the [documentation pages for the Linux kernel development community](https://www.kernel.org/doc/html/v4.14/process/index.html). :cactus:
 
 > [!IMPORTANT]
-> Remember that most members of any community volunteer their time and new members should act accordingly.
+> Remember that most members of any community volunteer their time and members should act accordingly.
 
 # Evolution of Linux
 
@@ -84,7 +84,7 @@ There are around nine hundred different Linux distributions, of which about 250 
 1. Read the Wikipedia article on [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy).
 2. Read about the [GNU project by Richard Stallman](https://www.gnu.org/gnu/thegnuproject.html).
 3. Read the Wikipedia article on [Unix-like](https://en.wikipedia.org/wiki/Unix-like).
-4. :cactus: Read a history of one of the Linux distributions: [S.u.S.E.](https://www.abortretry.fail/p/the-history-of-suse). :cactus:
+4. :cactus: Read a history of one of the Linux distributions: [S.u.S.E.](https://www.abortretry.fail/p/the-history-of-suse) :cactus:
 
 # What Linux is not?
 
@@ -97,6 +97,7 @@ Modern Linux distributions can be very pleasing to the eye, easy and efficient t
 ## Exercises
 
 1. Read the Wikipedia article on [POSIX](https://en.wikipedia.org/wiki/POSIX).
+2. :cactus: Watch this 45-minute video about [the hidden early history of Unix](https://archive.fosdem.org/2020/schedule/event/early_unix/). :cactus:
 
 [^1]: [kernel.org](https://www.kernel.org/)
 [^2]: [Wikipedia - History of Linux](https://en.wikipedia.org/wiki/History_of_Linux#Naming)
