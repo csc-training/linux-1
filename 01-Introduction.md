@@ -1,11 +1,11 @@
 ---
 title:  Basics of Linux - Introduction
 author: CSC Training / Joona Tolonen
-date:   2025-01
+date:   2025-07
 lang:   en
 ---
 
-# What is Linux?
+# Linux can mean...
 The terminology around Linux can be a bit confusing. You may have come across Linux, GNU/Linux, Linux distribution, Linux OS, etc. This chapter will try to clear things up.
 
 # Kernel
@@ -48,7 +48,7 @@ Other complementary software sources have emerged since then.
 There are around nine hundred different Linux distributions, of which about 250 are active[^6]. These are the ones listed on the distrowatch.com site, in reality both numbers are probably higher.
 
 > [!TIP]
-> So when people talk about Linux, they usually mean some of the Linux distributions.
+> So when people talk about Linux, they most probably mean some of the Linux distributions.
 
 ## Exercises
 
