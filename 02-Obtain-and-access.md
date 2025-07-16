@@ -1,7 +1,7 @@
 ---
 title:	Basics of Linux - Obtain and access
 author:	CSC Training / Joona Tolonen
-date:	  2025-01
+date:	  2025-07
 lang:	  en
 ---
 
@@ -24,13 +24,13 @@ Because Linux is a computer operating system, you'll need a computer (real or vi
   - CSC's [cloud](https://docs.csc.fi/cloud/) and [computing](https://docs.csc.fi/computing/) services are free[^1] for students and staff at Finnish universities. [cPouta](https://docs.csc.fi/pouta) is an IaaS service. Check out the [range of different flavours](https://docs.csc.fi/cloud/pouta/vm-flavors-and-billing/).
 
 > [!NOTE]
-> The exercises in this course can technically be done in any Linux environment, but in this course we will use CSC's Linux environments.
+> Technically, the exercises in this course can be done in any Linux environment. However, in this course, we will use a Linux container in [Noppe](https://noppe.csc.fi).
 
 # Obtaining a Linux distribution
 > Most Linux distributions are free, but maintained by volunteers. If possible, participate in the community work or make donations.
 
 > [!TIP]
-> If you are using CSC's cloud environment, it is optional to go through exercises that handles installing Linux.
+> If you are going to use Noppe or other CSC's cloud environment, it is optional to go through exercises that handles installing Linux.
 
 ## Exercises
 1. Dedicated hardware or locally virtualised environments give you complete freedom to choose the distribution you want.
@@ -51,14 +51,11 @@ Because Linux is a computer operating system, you'll need a computer (real or vi
 3. If you are using Windows and want to connect to remote Linux and its command line, you can use third-party software such as [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or the built-in PowerShell command prompt.
 4. :cactus: If you have a remote Linux machine and want to use a graphical user interface, you'll need a [VNC server](https://en.wikipedia.org/wiki/VNC) or similar. Also remember that the Linux operating system may come without a GUI installed, so you will need to install that as well. :cactus:
 
-# Graphical user interface
+> [!NOTE]
+> In order to use the Linux GUI in the CSC cloud environment, you will need to launch a virtual machine in cPouta, install the GUI and configure VNC. This is beyond the scope of this material.
 
-## Exercises
-1. 
-- X11 and Wayland
-- GNOME, KDE, XFCE, ...
--  
+# Graphical user interface
+The graphical user interface is covered more thoroughly in Chapter 9: [GUI](09-GUI.md).
 
 # Command-line interface
-
-## Exercises
+The command-line interface is covered more thoroughly in Chapter 3: [Command-line](03-Command-line.md).
